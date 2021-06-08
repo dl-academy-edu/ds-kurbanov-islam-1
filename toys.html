@@ -25,18 +25,18 @@
     </header>
     <main class="content">
         <div class="content-breadcrumbs">
-            <h2 class="content-title">Toy for kids</h2>
+            <h1 class="content-title">Toy for kids</h1>
             <a class="content-button" href="#">Home</a>
-            <a class="content-button" href="#"><img class="content-img" src="images/arrow.svg" alt="#" height="12"
-                    width="8"></a>
+            <img class="content-img" src="images/arrow.svg" alt="#" height="12" width="8">
             <a class="content-button" href="#">Catalog</a>
-            <a class="content-button" href="#"><img class="content-img" src="images/arrow.svg" alt="#" height="12"
-                    width="8"></a>
+            <img class="content-img" src="images/arrow.svg" alt="#" height="12" width="8">
             <a class="content-button" href="#">Toys</a>
         </div>
         <section class="poster">
-                <form class="poster-form" action="#">
-                    <h2 class="poster-title">Cost</h2>
+            <h2>Poster</h2>
+            <form class="poster-form" action="#">
+                <fieldset>
+                    <legend class="poster-title">Cost</legend>
                     <div class="poster-scale"><svg width="188" height="4" viewBox="0 0 188 4" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect opacity="0.5" width="188" height="4" fill="black" />
@@ -54,26 +54,30 @@
                     </div>
                     <p class="poster-text">0</p>
                     <p class="poster-text">500</p>
-                    <h2 class="poster-title">Color</h2>
+                </fieldset>
+                <fieldset>
+                    <legend class="poster-title">Color</legend>
                     <ul class="poster-list dots-none">
-                        <li class="poster-link">
+                        <li class="poster-item">
                             <input id="check-black" type="checkbox" name="black">
                             <label for="check-black">Black</label>
                         </li>
-                        <li class="poster-link">
+                        <li class="poster-item">
                             <input id="check-blue" type="checkbox" name="blue">
                             <label for="check-blue">Blue</label>
                         </li>
-                        <li class="poster-link">
+                        <li class="poster-item">
                             <input id="check-green" type="checkbox" name="green">
                             <label for="check-green">Green</label>
                         </li>
-                        <li class="poster-link">
+                        <li class="poster-item">
                             <input id="check-white" type="checkbox" name="white">
                             <label for="check-white">White</label>
                         </li>
-                    </ul>
-                    <h2 class="poster-title">Delivery</h2>
+                    </ul>                    
+                </fieldset>
+                <fieldset>
+                    <legend class="poster-title">Delivery</legend>
                     <label class="poster-delivery">
                         <input name="Delivery" type="radio" value="Free shipping">
                         Free shipping
@@ -81,24 +85,27 @@
                     <label class="poster-delivery">
                         <input name="Delivery" type="radio" value="Fast shipping">
                         Fast shipping
-                    </label>
-                    <h2 class="poster-title">Amount</h2>
-                        <ul class="poster-list dots-none">
-                            <li class="poster-link">
-                                <input class="poster-placeholder" type="text" placeholder="0-5"
-                                    style="margin: -5px; background-color:  #F3D0DB;">
-                            </li>
-                            <li>
-                                <input class="poster-placeholder" type="text" placeholder="10-20"
-                                    style="margin: -5px; background-color:  #FFFFFF;">
-                            </li>
-                            <li>
-                                <input class="poster-placeholder" type="text" placeholder="20-50"
-                                    style="margin: -5px; background-color:  #FFFFFF;">
-                            </li>
-                        </ul>
-                        <button class="button">Apply</button>
-                </form>
+                    </label>                        
+                </fieldset>
+                <fieldset>
+                    <legend class="poster-title">Amount</legend>
+                    <ul class="poster-list dots-none">
+                        <li class="poster-link">
+                            <input class="poster-input" type="number" placeholder="0-5">
+                            <label for=""></label>
+                        </li>
+                        <li class="poster-link">
+                            <input id="place-radio" class="poster-input" type="text" placeholder="10-20">
+                            <label for="place-radio"></label>
+                        </li>
+                        <li class="poster-link">
+                            <input class="poster-input" type="text" placeholder="20-50">
+                           
+                        </li>
+                    </ul>
+                    <button class="button">Apply</button>                        
+                </fieldset>
+            </form>
         </section>
         <section class="products">
             <h2 class="products-title">Services</h2>
@@ -136,10 +143,10 @@
             </ul>
             <ul class="products-list dots-none">
                 <li class="products-link">
-                    <a class="products-button">1</a>
-                    <a class="products-button">2</a>
-                    <a class="products-button">3</a>
-                    <a class="products-button">4</a>
+                    <a class="products-button" href="#">1</a>
+                    <a class="products-button" href="#">2</a>
+                    <a class="products-button" href="#">3</a>
+                    <a class="products-button" href="#">4</a>
                 </li>
             </ul>
         </section>
@@ -175,6 +182,13 @@
             <li class="footer-link"><a class="footer-button" href="#"><img class="footer-img" src="images/social/social4.svg" alt="" width="30" height="30"></a></li>
         </ul>
         <p class="footer-text">Company Rating</p>
+        <ul class="footer-rating-list">
+            <li class="footer-rating-link"><img src="images/Star.svg" alt="Star"></li>
+            <li class="footer-rating-link"><img src="images/Star.svg" alt="Star"></li>
+            <li class="footer-rating-link"><img src="images/Star.svg" alt="Star"></li>
+            <li class="footer-rating-link"><img src="images/Star.svg" alt="Star"></li>
+            <li class="footer-rating-link"><img src="images/Star.svg" alt="Star"></li>
+        </ul>
         <a class="footer-button" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
         <a class="footer-button" href="#">Web Design — Direct Line Development</a>
     </footer>
