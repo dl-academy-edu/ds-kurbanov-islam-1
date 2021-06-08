@@ -23,9 +23,9 @@
     </header>
     <main class="content">
         <div class="content-breadcrumbs">
-            <h2 class="content-title">Contact  Us</h2>
+            <h1 class="content-title">Contact  Us</h1>
             <a class="content-button" href="#">Home</a>
-            <a class="content-button" href="#"><img class="content-img" src="images/arrow.svg" alt="#" height="12" width="8"></a>
+            <img class="content-img" src="images/arrow.svg" alt="#" height="12" width="8">
             <a class="content-nav-button" href="#"> Contact us</a>
         </div>
         <section class="contact">
@@ -33,22 +33,29 @@
                 <div class="contact-wrapper">
                     <h2 class="contact-title">contact</h2>
                     <form class="contact-form" action="#" method="post">
-                        <label class="contact-name" for="name-input">Name</label>
-                        <input class="contact-input" id="name-input" type="text" placeholder="Ivan Ivanov">
+                        <fieldset>
+                            <label class="contact-name" for="name-input">Name</label>
+                            <input class="contact-input" id="name-input" type="text" placeholder="Ivan Ivanov">
+                        </fieldset>
 
-                        <label class="contact-phone" for="phone-input">Phone</label>
-                        <input class="contact-input" id="phone-input" type="text">
+                        <fieldset>
+                            <label class="contact-phone" for="phone-input">Phone</label>
+                            <input class="contact-input" id="phone-input" type="number">
 
-                        <label class="contact-email" for="email-input">Email</label>
-                        <input class="contact-input" id="email-input" type="email">
+                            <label class="contact-email" for="email-input">Email</label>
+                            <input class="contact-input" id="email-input" type="email">
+                        </fieldset>
 
-                        <label class="contact-message" for="textarea">Message</label>
-                        <textarea class="contact-textarea" id="textarea" rows="10" cols="100"></textarea>  
+                        <fieldset>
+                            <label class="contact-message" for="textarea">Message</label>
+                            <textarea class="contact-textarea" id="textarea" rows="10" cols="100"></textarea>  
 
-                        <input id="check-cash" type="checkbox">
-                        <label class="contact-nav-text" for="check-cash">By clicking on the button, you consent to the processing of your personal data</label>
+                            <input id="check-cash" type="checkbox">
+                            <label class="contact-nav-text" for="check-cash">By clicking on the button, you consent to the processing of your personal data</label>
+
+                            <button class="contact-button button">Submit</button>                             
+                        </fieldset>
                     </form>
-                    <button class="contact-button button">Submit</button>
                     <p class="contact-text">Our support team are on-hand to assist with any issues you are experiencing.
                     </p>
                     <p class="contact-text">Please use the form to contact us with your needs. Send us a message and
